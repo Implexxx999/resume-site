@@ -1,6 +1,6 @@
 <!-- ------------------------------------------------------------------
-  index.html – Resume Site for Mike/Haoyang Liu (navy theme)
-  Updated: 2025-06-13 — navy-blue & white colour scheme + RA logos
+  index.html – Resume Site for Mike/Haoyang Liu (navy theme, updated logos)
+  Updated: 2025-06-13 — fix logo links, drop black text, add Peking University
 ------------------------------------------------------------------ -->
 <!DOCTYPE html>
 <html lang="en">
@@ -9,157 +9,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mike Liu – Résumé</title>
 
-  <!-- ================= Custom Styles ================= -->
+  <!-- ============== Custom Styles ============== -->
   <style>
     :root {
-      --navy: #002a5c;   /* primary navy blue */
-      --navy-light: #1c3d6e;
-      --accent-line: #00509e; /* for separators */
+      --navy: #002a5c;
+      --accent-line: #00509e;
     }
-
-    html,body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background: #ffffff;
-      color: #000;
-      line-height: 1.55;
-    }
-
-    /* ---------- Header ---------- */
-    header {
-      background: var(--navy);
-      color: #fff;
-      text-align: center;
-      padding: 2.2rem 1rem 2rem;
-    }
-    header h1 {
-      margin: 0 0 0.35rem;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    header p {
-      margin: 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin: 0 0.4rem;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* ---------- Sections ---------- */
-    section {
-      max-width: 860px;
-      margin: 3rem auto;
-      padding: 0 1.2rem;
-    }
-    h2 {
-      font-size: 1.75rem;
-      color: var(--navy);
-      margin-bottom: 0.8rem;
-      padding-bottom: 0.4rem;
-      border-bottom: 2px solid var(--accent-line);
-    }
-    ul {
-      padding-left: 1.25rem;
-    }
-
-    /* ---------- RA Experience ---------- */
-    .ra-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.2rem;
-    }
-    .ra-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.8rem;
-    }
-    .ra-logo {
-      flex: 0 0 60px;
-      max-width: 60px;
-      height: auto;
-    }
-    .ra-item h3 {
-      margin: 0 0 0.25rem;
-      font-size: 1.1rem;
-      color: var(--navy-light);
-    }
-    .ra-item p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-
-    /* ---------- Contact ---------- */
-    #contact p {
-      font-size: 1rem;
-    }
+    html,body {margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;background:#fff;color:#000;line-height:1.55;}
+    header {background:var(--navy);color:#fff;text-align:center;padding:2.2rem 1rem 2rem;}
+    header h1 {margin:0 0 .35rem;font-size:2.5rem;font-weight:700;}
+    header p {margin:0;font-size:1rem;opacity:.9;}
+    nav {margin-top:1rem;}
+    nav a {color:#fff;text-decoration:none;margin:0 .45rem;font-weight:500;}
+    nav a:hover {text-decoration:underline;}
+    section {max-width:900px;margin:3rem auto;padding:0 1.2rem;}
+    h2 {font-size:1.75rem;color:var(--navy);margin-bottom:.85rem;padding-bottom:.4rem;border-bottom:2px solid var(--accent-line);}    
+    /* ---------- RA grid ---------- */
+    .ra-list {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:1.2rem;}
+    .ra-item {display:flex;align-items:center;gap:.9rem;}
+    .ra-logo {flex:0 0 64px;max-width:64px;height:auto;}
+    .ra-item h3 {margin:0;font-size:1rem;color:var(--navy);}
   </style>
 </head>
 <body>
 
-  <!-- =========================== Header =========================== -->
+  <!-- ================= Header ================= -->
   <header>
     <h1>Mike Liu</h1>
     <p>Rising Junior, Washington University in St.&nbsp;Louis</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#ra">RA&nbsp;Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
   </header>
 
-  <!-- =========================== About ============================ -->
+  <!-- ================= About ================== -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a research&nbsp;assistant collaborating with groups at <strong>MIT</strong>, <strong>Columbia University</strong>, and <strong>Washington University in St.&nbsp;Louis</strong>. My work focuses on machine&nbsp;learning, statistical methodology, and operations&nbsp;research.</p>
+    <p>I am a research&nbsp;assistant collaborating with groups at MIT, Columbia University, Peking University, and Washington University in St.&nbsp;Louis. My work focuses on machine&nbsp;learning, statistical methodology, and operations&nbsp;research.</p>
   </section>
 
-  <!-- ===================== Research Assistantships ================= -->
+  <!-- ============= Research Assistantships ============= -->
   <section id="ra">
     <h2>Research Assistant Experience</h2>
     <div class="ra-list">
       <!-- MIT -->
       <div class="ra-item">
-        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg" alt="MIT logo">
-        <div>
-          <h3>Massachusetts Institute of Technology</h3>
-          <p>Machine&nbsp;Learning &amp; Statistics Group</p>
-        </div>
+        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/44/MIT_Logo.png" alt="MIT logo">
+        <h3>Massachusetts Institute of Technology</h3>
       </div>
 
       <!-- Columbia University -->
       <div class="ra-item">
-        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Columbia_University_logo.svg" alt="Columbia logo">
-        <div>
-          <h3>Columbia University</h3>
-          <p>Data Science Institute – Statistical Methods</p>
-        </div>
+        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Columbia_University_seal_blue.png" alt="Columbia University logo">
+        <h3>Columbia University</h3>
+      </div>
+
+      <!-- Peking University -->
+      <div class="ra-item">
+        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Peking_University_seal.svg" alt="Peking University logo">
+        <h3>Peking University</h3>
       </div>
 
       <!-- Washington University in St. Louis -->
       <div class="ra-item">
-        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Washington_University_St._Louis_logo.svg" alt="WashU logo">
-        <div>
-          <h3>Washington University in St.&nbsp;Louis</h3>
-          <p>Operations&nbsp;Research &amp; Analytics Lab</p>
-        </div>
+        <img class="ra-logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/WashU_Logo.png" alt="Washington University logo">
+        <h3>Washington University in St.&nbsp;Louis</h3>
       </div>
     </div>
   </section>
 
-  <!-- ======================== Contact ============================= -->
+  <!-- ================= Contact ================= -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:haoyangl@wustl.edu">haoyangl@wustl.edu</a></p>
