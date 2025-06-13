@@ -1,181 +1,43 @@
 <!-- ------------------------------------------------------------------
-  index.html – Resume Site for Mike/Haoyang Liu
-  Converted from LaTeX source provided on 2025‑06‑13
-  Each <!-- [LaTeX] ... --> comment points back to the original block
-  so you can easily trace & edit content.
+  index.html – Resume Site for Mike/Haoyang Liu (updated 2025-06-13)
+  Quick skeleton version adapted per user request
 ------------------------------------------------------------------ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mike Liu – Résumé</title>
-  <!-- Simple, lightweight default styling; feel free to replace -->
+  <title>Mike Liu – Résumé</title>
   <link href="https://cdn.jsdelivr.net/npm/simpledotcss/simple.min.css" rel="stylesheet">
-  <style>
-    /* Custom accent colours (matches LaTeX accentText & accentLine) */
-    :root {
-      --accent: #0e6e55;
-    }
-    body {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      font-family: system-ui, "Segoe UI", Roboto, sans-serif;
-    }
-    header, section {
-      margin-bottom: 2.5rem;
-    }
-    header h1 {
-      color: var(--accent);
-      margin-bottom: 0.25rem;
-    }
-    h2 {
-      color: var(--accent);
-      border-bottom: 2px solid #a16f0b; /* [LaTeX] accentLine */
-      padding-bottom: 0.25rem;
-      margin-top: 2rem;
-    }
-    ul {
-      margin-top: 0.5rem;
-    }
-    /* Two‑column coursework list */
-    .columns {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      column-gap: 1.5rem;
-    }
-  </style>
 </head>
 <body>
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \documentTitle – Name & Contact --------------------- -->
+  <!-- =========================== Header =========================== -->
   <header>
-    <h1>Mike&nbsp;/&nbsp;Haoyang&nbsp;Liu</h1>
-    <p>
-      <strong>Phone:</strong> US +1 557‑500‑3826 &nbsp;|&nbsp; CN/Wechat UID 17317656958<br>
-      <strong>Email:</strong> <a href="mailto:haoyangl@wustl.edu">haoyangl@wustl.edu</a>
-    </p>
+    <h1>Mike Liu</h1>
+    <p>Rising Junior, Washington University in St.&nbsp;Louis</p>
+    <nav>
+      <a href="#about">About</a> ·
+      <a href="#publications">Publications</a> ·
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \section{Education} --------------------------------- -->
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Sophomore, Washington University in St. Louis</strong></p>
-    <p>B.S. in Applied Mathematics &nbsp;|&nbsp; B.S. in Computer Science &amp; Engineering</p>
-    <ul>
-      <li>GPA 3.98 / 4.00 (7&nbsp;A+ out of 17 courses)</li>
-      <li>Dean's List honouree</li>
-    </ul>
+  <!-- =========================== About ============================ -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a research&nbsp;assistant collaborating with groups at MIT, Columbia University, and Washington University in St.&nbsp;Louis. My work focuses on machine&nbsp;learning, statistical methodology, and operations&nbsp;research.</p>
   </section>
 
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \section*{Related Coursework} ------------------------ -->
-  <section id="coursework">
-    <h2>Related Coursework</h2>
-    <div class="columns">
-      <div>
-        <h3>Math &amp; Statistics</h3>
-        <ul>
-          <li>Linear Algebra</li>
-          <li>Stochastic Process</li>
-          <li>Optimization</li>
-          <li>Real Analysis</li>
-          <li>Numerical Analysis</li>
-          <li>Optimization in Machine Learning</li>
-          <li>Abstract Algebra (Self‑taught)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Computer Science</h3>
-        <ul>
-          <li>Data Structures &amp; Algorithms; AI Algorithms</li>
-          <li>Python &amp; Java Programming</li>
-          <li>Machine Learning</li>
-        </ul>
-        <h3 style="margin-top:1.25rem">Economics</h3>
-        <ul>
-          <li>Microeconomics &amp; Macroeconomics</li>
-          <li>Game Theory</li>
-        </ul>
-      </div>
-    </div>
+  <!-- ======================== Publications ======================== -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <p>None published yet&nbsp;&mdash; manuscripts in preparation.</p>
   </section>
 
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \section{Research Experience} ----------------------- -->
-  <section id="research">
-    <h2>Research Experience</h2>
-
-    <h3>Convergence of Adam Optimization Algorithm <span style="font-weight:normal">(Nov 2024 – Present)</span></h3>
-    <p><em>Guided by Prof. Chen, WashU Department of Statistics &amp; Data Science</em></p>
-    <ul>
-      <li>Designed and executed experiments to verify specific distributions.</li>
-      <li>Assisted Ph.D. colleagues with theoretical proof work.</li>
-    </ul>
-
-    <h3>Data‑Driven Supply Chain Optimization <span style="font-weight:normal">(Jun 2024 – Present)</span></h3>
-    <p><em>Guided by Prof. Qiu Yunzhe (Peking University) &amp; Prof. Lingxiu Dong (WashU Olin Business School)</em></p>
-    <ul>
-      <li>Attended weekly seminar and delivered several 2‑hour literature reviews on cutting‑edge topics.</li>
-      <li>Conducted in‑depth research in contextual optimization.</li>
-      <li>Currently working on a paper about seed agricultural network optimization.</li>
-    </ul>
-
-    <h3>Research Assistant in Biostatistics, WashU School of Medicine <span style="font-weight:normal">(Sept 2024 – Present)</span></h3>
-    <p><em>Guided by Prof. Liu Lei and Prof. Zhou Ruiwen</em></p>
-    <ul>
-      <li>Conducted bi‑weekly literature reviews of machine‑learning methods in biostatistics.</li>
-      <li>Performing in‑depth research on the implementation of xLSTM and ViL.</li>
-    </ul>
-
-    <h3>Technical Advisor &amp; Researcher, Boeing Center for Supply Chain Innovation <span style="font-weight:normal">(Sept 2024 – Dec 2024)</span></h3>
-    <p><em>Guided by Prof. Panos Kouvelis &amp; Prof. Andy Sample, WashU Olin Business School</em></p>
-    <ul>
-      <li>Provided supply‑chain optimization solutions for Switch and Anheuser‑Busch.</li>
-      <li>Assisted master’s students with data cleaning and supply‑chain analysis.</li>
-    </ul>
-
-    <h3>Independent Research in Algebraic Geometry <span style="font-weight:normal">(Jan 2024 – May 2024)</span></h3>
-    <p><em>Guided by Prof. Li Wanlin &nbsp;|&nbsp; Registered as Math 400</em></p>
-    <ul>
-      <li>Read John Tate’s “Rational Points on Elliptic Curves” focusing on field extension &amp; fixed torsion.</li>
-      <li>Held weekly in‑person discussions with professors.</li>
-    </ul>
+  <!-- =========================== Contact ========================== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:haoyangl@wustl.edu">haoyangl@wustl.edu</a></p>
   </section>
-
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \section{Internships} ------------------------------- -->
-  <section id="internships">
-    <h2>Internships</h2>
-    <h3>Quantitative Finance Developer &amp; Researcher, Huatai Securities Co., Ltd <span style="font-weight:normal">(Jul 2024 – Aug 2024)</span></h3>
-    <ul>
-      <li>Developed 17 factors for TCFE trading using Python and machine learning.</li>
-      <li>Acquired trading logic and skills in futures and treasury markets.</li>
-    </ul>
-  </section>
-
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \section{Extracurricular Activities} ---------------- -->
-  <section id="activities">
-    <h2>Extracurricular Activities</h2>
-    <ul>
-      <li>Research Assistant &amp; Developer of an early‑screening app for Alzheimer’s using eye‑tracking technology.</li>
-      <li>Social Chair (2024‑2025) of the WashU Math Club; Logistics committee for WashU Mathematical Excellence Competition (WUMEC).</li>
-    </ul>
-  </section>
-
-  <!-- ============================================================= -->
-  <!-- [LaTeX] \section{Skill Sets} -------------------------------- -->
-  <section id="skills">
-    <h2>Skill Sets</h2>
-    <p>Java, Python, C++, R, LaTeX, MATLAB</p>
-  </section>
-
-  <!-- Footer / last updated -->
-  <footer>
-    <p style="font-size:0.85rem; text-align:center; color:#666">Last updated: 13 Jun 2025</p>
-  </footer>
 </body>
 </html>
